@@ -11,8 +11,19 @@ var config = {
     create: create,
     update: update
   },
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 0 },
+      debug: false
+    }
+  },
   backgroundColor: '#008000'
 };
+
+var walls;
+var lady;
+var skeleton;
 
 var game = new Phaser.Game(config);
 
@@ -25,15 +36,21 @@ function preload ()
 
 }
 
+
+
 function create ()
 {
-  this.add.image(400, 300, 'walls');
-  var lady = this.add.image(400, 300, 'lady');
-  lady.displayWidth = 32;
-  lady.displayHeight = 32;
-  var skeleton = this.add.image(25, 25, 'skeleton');
-  skeleton.displayWidth = 32;
-  skeleton.displayHeight = 32;
+  walls = this.physics.add.staticGroup();
+  walls.create(400, 300, 'walls');
+
+  lady = this.add.image(400, 300, 'lady').setScale(2);
+  skeleton = this.add.image(25, 25, 'skeleton').setScale(2);
+//   var walls = this.physics.add.staticGroup();
+//   walls.create(400, 300, 'walls');
+
+
+//   this.physics.add.collider(skeleton, walls);
+
 }
 
 function update ()
