@@ -22,7 +22,7 @@ function preload ()
   this.load.image('walls', 'assets/walls.png');
   this.load.image('lady', 'assets/lady.png');
   this.load.image('skeleton', 'assets/skeleton.png');
-
+  this.load.image('turret', 'assets/turret.png');
 }
 
 function create ()
