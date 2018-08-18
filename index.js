@@ -28,9 +28,12 @@ function preload ()
 function create ()
 {
   this.add.image(400, 300, 'walls');
-  this.add.image(400, 300, 'lady');
-  this.add.image(25, 25, 'skeleton');
-
+  var lady = this.add.image(400, 300, 'lady');
+  lady.displayWidth = 32;
+  lady.displayHeight = 32;
+  var skeleton = this.add.image(25, 25, 'skeleton');
+  skeleton.displayWidth = 32;
+  skeleton.displayHeight = 32;
 }
 
 function update ()
