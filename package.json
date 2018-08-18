@@ -1,0 +1,22 @@
+{
+  "name": "game-jame_august2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cadams8238/game-jam_aug_summer-slow-jams.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cadams8238/game-jam_aug_summer-slow-jams/issues"
+  },
+  "homepage": "https://github.com/cadams8238/game-jam_aug_summer-slow-jams#readme",
+  "dependencies": {
+    "phaser": "^3.11.0"
+  }
+}
